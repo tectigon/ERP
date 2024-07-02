@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  font-family: "normal";
+  line-height: 1.5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  scroll-behavior: smooth;
+
+  font-family: "Poppins", sans-serif;
+
+  --primary: #cbe2c8;
+  --secondary: #e8fd9d;
+  --pure: #d6dfea;
+  --tertiory: #cbe2c8;
+  --optional: #f3f7f5;
+  --bg: #e8eeea;
+  --dark-bg: #0f1122;
+  --btn-bg:#D49D1F;
+  --btn-bg2:#FFBC25;
+}
+* {
+  list-style: none;
+}
+
+#main {
+  margin-top: 6rem;
+  padding: 0px 20px;
+  transition: all 3s;
+  flex-grow: 1;
+}
+
+@media (max-width: 1199px) {
+  #main {
+    padding: 20px;
+  }
+}
+#main h4 {
+  font-size: 18px;
+  padding: 0.6rem;
+  letter-spacing: 2px;
+}
+
+.welcome-container {
+  margin: 1rem auto;
+}
+.welcome-content .left-content {
+  border-radius: 8px;
+  padding: 0rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.welcome-content .left-content img {
+  width: 300px;
+}
+.left-content .text-content h3 {
+  font-size: 32px;
+  line-height: 2.4rem;
+  margin-top: 4rem;
+  width: 80%;
+}
+.left-content .text-content h3 span {
+  position: relative;
+}
+.left-content .text-content h3 span::before {
+  position: absolute;
+  height: 0.4vh;
+  width: 28vh;
+  content: "";
+  top: 2.5rem;
+}
+.left-content .text-content p {
+  font-size: 16px;
+
+  line-height: 1.4rem;
+  color: gray;
+}
+.left-content .text-content p span {
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.hr-cards .single-hrcard > div {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--300);
+  transition: 0.3s ease-in-out;
+}
+
+.hr-cards .single-hrcard > div h5 {
+  font-size: 14px;
+  padding-bottom: 2rem;
+}
+.hr-cards .single-hrcard > div p {
+  color: gray;
+  font-size: 15px;
+}
+.single-hrcard .icon {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 2rem;
+}
+.single-hrcard .icon i {
+  color: var(--300);
+  font-size: 2rem;
+  background-color: var(--400);
+  padding: 2px 10px;
+  border-radius: 50%;
+}
+.hr-cards .single-hrcard > div button {
+  border: none;
+  width: 100%;
+  padding: 4px;
+  border-radius: 2px;
+  color: var(--100);
+}
